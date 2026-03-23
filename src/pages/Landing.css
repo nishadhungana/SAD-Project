@@ -1,0 +1,165 @@
+.landing { color: var(--text); }
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  gap: 1.5rem;
+}
+
+.hero-badge {
+  background: rgba(74,222,128,0.1);
+  border: 1px solid rgba(74,222,128,0.3);
+  color: #4ade80;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  color: var(--text);
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #4ade80, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+
+.cta-primary {
+  padding: 0.85rem 2rem;
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  color: #0a0f0a;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 20px rgba(74,222,128,0.3);
+}
+.cta-primary:hover { transform: translateY(-2px); box-shadow: 0 0 30px rgba(74,222,128,0.5); }
+
+.cta-secondary {
+  padding: 0.85rem 2rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.cta-secondary:hover { background: var(--surface); }
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding: 1.5rem 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stat { text-align: center; }
+.stat-number { display: block; font-size: 1.8rem; font-weight: 800; color: #4ade80; }
+.stat-label { font-size: 0.8rem; color: var(--text-muted); }
+.stat-divider { width: 1px; height: 40px; background: var(--border); }
+
+/* Supply Chain */
+.supply-chain {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.supply-chain h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+}
+.chain-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.chain-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1.5rem;
+}
+.chain-icon {
+  font-size: 2.5rem;
+  background: rgba(74,222,128,0.1);
+  border: 1px solid rgba(74,222,128,0.2);
+  border-radius: 16px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chain-label { font-weight: 700; color: var(--text); font-size: 0.95rem; }
+.chain-desc { font-size: 0.78rem; color: var(--text-muted); max-width: 100px; text-align: center; }
+.chain-arrow { font-size: 1.5rem; color: #4ade80; position: absolute; right: -14px; top: 50%; transform: translateY(-50%); }
+
+/* Roles */
+.roles-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.roles-section h2 { font-size: 2rem; font-weight: 700; color: var(--text); margin-bottom: 2rem; }
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.role-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s;
+}
+.role-card:hover {
+  background: rgba(74,222,128,0.06);
+  border-color: rgba(74,222,128,0.3);
+  transform: translateY(-4px);
+}
+.role-icon { font-size: 2rem; }
+.role-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--text); margin: 0.4rem 0; }
+.role-card p { font-size: 0.82rem; color: var(--text-muted); text-align: center; margin: 0; }
+.role-join { margin-top: 0.5rem; font-size: 0.85rem; color: #4ade80; font-weight: 600; }
